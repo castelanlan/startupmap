@@ -13,5 +13,5 @@ Site que mapeia startups da região
 
 ### Devs
 
-Dependencias: `yarn install` || `npm install`
+Dependencias: `yarn add` || `npm install`
 Start: `npm start` || `yarn run start`

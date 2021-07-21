@@ -1,4 +1,18 @@
 import styled from "styled-components";
+import { BiCheck } from 'react-icons/bi'
+
+// ícones
+export const OkIcon = styled(BiCheck)``;
+
+// botôes
+export const LoginStartUpButton = styled.button` // não sei pq não funfa 🗿
+    background-color: var(--color-hlink);
+`;
+
+export const OkButton = styled.button`
+    background-color: var(--color-green);
+
+`;
 
 export const NavBar = styled.div`
     width: 100%;
@@ -7,16 +21,12 @@ export const NavBar = styled.div`
     border-color: var(--color-green);
     box-shadow: var(--panel-shadow);
     text-align: right;
-    justify-content: space-between;
-    display: inline-block;
 `;
 
 export const LinksRow = styled.div`
     padding-top: 7px;
     margin-top: 7px;
     display: inline-block;
-    justify-content: flex-end;
-    align-items: center;
     padding: 16px;
     margin-left: 7px;
 
@@ -35,15 +45,8 @@ export const LinksRow = styled.div`
     }
 `;
 
-export const Container = styled.div`
-`;
-
 export const LoginStartUpBox = styled.div`
     display: inline-block;
     align-items: center;
     justify-content: center;
-`;
-
-export const LoginStartUpButton = styled.button`
-    background-color: var(--color-hlink);
 `;
