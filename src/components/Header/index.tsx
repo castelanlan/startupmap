@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from 'react-modal';
+import { css } from "styled-components";
 
 
 import {
@@ -12,7 +13,16 @@ import {
 
 Modal.setAppElement('#root')
 
-
+const estiloModal = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  },
+};
 
 
 // fixme: aparentemente funções de flecha não são mais
@@ -47,16 +57,23 @@ const Header: React.FC = () => {
         </LinksRow>
 
         <LoginStartUpBox>
-          <LoginStartUpButton onClick={openModal}>Procurar</LoginStartUpButton>
-          <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal}>
-            <p>texto texto texto</p>
+          <LoginStartUpButton onClick={openModal}>Cadastre sua start up aqui!</LoginStartUpButton>
+          <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
+            <form action="/">
+              <label htmlFor="nstartup">Nome da sua start up</label>
+              <input type="text" id="in_nstartup" name="nomeStartUp" placeholder="Necessário" />
+              <label htmlFor="nfunds">Nome dos fundadores</label>
+              <input type="text" id="in_nfunds" name="nFunds" placeholder="Necessário" />
+              <label htmlFor="email">Email</label>
+              <input type="text" id="in_email" name="email" placeholder="Do dono ou da startup" />
+              <label htmlFor="site">Site</label>
+              <input type="text" id="in_site" name="site" placeholder="Opcional" />
+            </form>
           </Modal>
         </LoginStartUpBox>
       </NavBar>
     </Container>
   );
 };
-
-
 
 export default Header;
