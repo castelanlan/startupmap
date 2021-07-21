@@ -1,51 +1,49 @@
-import styled, { css } from "styled-components";
-
-import { AiOutlineSearch } from 'react-icons/ai';
-
-const iconCSS = css`
-    width: 30px;
-    height: 30px;
-`;
-
-export const SearchIcon = styled(AiOutlineSearch)`${iconCSS}`;
-export const SMPIcon = styled.div``;
-
-export const LinksDiv = styled.div`
-    padding-top: 10px;
-    margin-top: 10px;
-`;
+import styled from "styled-components";
 
 export const NavBar = styled.div`
+    width: 100%;
     position: sticky;
-    /* height: 100px; */
     border-bottom: solid 4px;
-    border-color: var(--color-bg);
+    border-color: var(--color-green);
     box-shadow: var(--panel-shadow);
     text-align: right;
+    justify-content: space-between;
+    display: inline-block;
 `;
 
-export const NavRow = styled.ul`
+export const LinksRow = styled.div`
+    padding-top: 7px;
+    margin-top: 7px;
     display: inline-block;
-    font-size: 30px;
-    
-    
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    margin-left: 7px;
+
     > a {
+        font-size: 20px;
         text-decoration: none;
         color: var(--color-hlink);
         padding: 2.5px 0;
 
-    & + a {
-        padding-left: 10px;
-        border-right: 1px solid var(--color-hlight);
-        margin-left: 10px;
+        & + a {
+            background-color: transparent; // pra um texto não cobrir o outro
+            padding-left: 10px;
+            border-left: 2px solid var(--color-hlight);
+            margin-left: 10px;
+        }
     }
-}
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+`;
 
-export const Wrapper = styled.div``;
+export const LoginStartUpBox = styled.div`
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+`;
 
-export const LoginStartUpBox = styled.div``;
-
-export const LoginStartUpButton = styled.button``;
+export const LoginStartUpButton = styled.button`
+    background-color: var(--color-hlink);
+`;

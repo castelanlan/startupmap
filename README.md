@@ -10,4 +10,8 @@ Site que mapeia startups da região
         * Nome dos fundadores
         * Email
         * Site
-        
+
+### Devs
+
+Dependencias: `yarn install` || `npm install`
+Start: `npm start` || `yarn run start`

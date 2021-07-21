@@ -1,39 +1,56 @@
 import React from "react";
+import Modal from 'react-modal';
+
 
 import {
-  Container, Wrapper,
-  SMPIcon,
-  SearchIcon,
+  Container,
   NavBar,
-  NavRow,
-  LinksDiv,
+  LinksRow,
   LoginStartUpBox,
   LoginStartUpButton
 } from "./styles";
 
+
+
+
+
 const Header: React.FC = () => {
+
+  // https://www.npmjs.com/package/react-modal
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function abreModal() {
+    setIsOpen(true);
+    console.log("fecha modal")
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    console.log("aaasdasd")
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+    console.log("fecha modal")
+  }
+
   return (
     <Container>
-      <Wrapper>
-        <NavBar>
-          <SMPIcon />
-          <LinksDiv>
-            <NavRow>
-              <a className="active" href="/">primeiro </a>
-              <a href="/">segundo </a>
-              <a href="/">terceiro </a>
-            </NavRow>
-          </LinksDiv>
-          <SearchIcon />
-        </NavBar>
+      <NavBar>
+        <LinksRow>
+          <a className="active" href="/">primeiro </a>
+          <a href="/">segundo </a>
+          <a href="/">terceiro </a>
+        </LinksRow>
 
         <LoginStartUpBox>
-          <LoginStartUpButton />
+          <LoginStartUpButton onClick={abreModal}>Procurar</LoginStartUpButton>
         </LoginStartUpBox>
-
-      </Wrapper>
+      </NavBar>
     </Container>
   );
 };
+
+
 
 export default Header;
