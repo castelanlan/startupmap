@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import { css } from "styled-components";
 
 import {
+  Container,
   NavBar,
   LinksRow,
   LoginStartUpBox,
@@ -51,37 +52,39 @@ const Header: React.FC = () => {
   }
 
   return (
-    <NavBar>
-      <LinksRow> {/* remoção talvez necessária considerando que isso vai ser de página única*/}
-        <a className="active" href="/">primeiro </a> {/*fix: Mudar href para as paginas certas*/}
-        <a href="/">segundo </a>
-        <a href="/">terceiro </a>
-      </LinksRow>
+    <Container>
+      <NavBar>
+        <LinksRow> {/* remoção talvez necessária considerando que isso vai ser de página única*/}
+          <a className="active" href="/">primeiro </a> {/*fix: Mudar href para as paginas certas*/}
+          <a href="/">segundo </a>
+          <a href="/">terceiro </a>
+        </LinksRow>
 
-      <LoginStartUpBox>
-        <LoginStartUpButton onClick={openModal}>Cadastre sua start up aqui!</LoginStartUpButton>
-        {/* <ModalDiv> */}
-        <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
-          <form action="/post/cadastrar?"> {/* não sei as rotas*/}
+        <LoginStartUpBox>
+          <LoginStartUpButton onClick={openModal}>Cadastre sua start up aqui!</LoginStartUpButton>
+          {/* <ModalDiv> */}
+          <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
+            <form action="/post/cadastrar?"> {/* não sei as rotas*/}
 
-            <label htmlFor="nstartup">Nome da sua start up</label>
-            <input type="text" id="in_nstartup" name="nomeStartUp" placeholder="Necessário" />
+              <label htmlFor="nstartup">Nome da sua start up</label>
+              <input type="text" id="in_nstartup" name="nomeStartUp" placeholder="Necessário" />
 
-            <label htmlFor="nfunds">Nome dos fundadores</label>
-            <input type="text" id="in_nfunds" name="nFunds" placeholder="Necessário" />
+              <label htmlFor="nfunds">Nome dos fundadores</label>
+              <input type="text" id="in_nfunds" name="nFunds" placeholder="Necessário" />
 
-            <label htmlFor="email">Email</label>
-            <input type="text" id="in_email" name="email" placeholder="Do dono ou da startup" />
+              <label htmlFor="email">Email</label>
+              <input type="text" id="in_email" name="email" placeholder="Do dono ou da startup" />
 
-            <label htmlFor="site">Site</label>
-            <input type="text" id="in_site" name="site" placeholder="Opcional" />
+              <label htmlFor="site">Site</label>
+              <input type="text" id="in_site" name="site" placeholder="Opcional" />
 
-            <OkButton>Cadastrar start up<OkIcon /></OkButton>
-          </form>
-        </Modal>
-        {/* </ModalDiv> */}
-      </LoginStartUpBox>
-    </NavBar>
+              <OkButton>Cadastrar start up<OkIcon /></OkButton>
+            </form>
+          </Modal>
+          {/* </ModalDiv> */}
+        </LoginStartUpBox>
+      </NavBar>
+    </Container>
   );
 };
 
