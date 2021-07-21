@@ -10,23 +10,26 @@ import {
   LoginStartUpButton
 } from "./styles";
 
+Modal.setAppElement('#root')
 
 
 
 
+// fixme: aparentemente funções de flecha não são mais
+// recomendas, só que funcionam
 const Header: React.FC = () => {
 
   // https://www.npmjs.com/package/react-modal
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  function abreModal() {
+  function openModal() {
     setIsOpen(true);
-    console.log("fecha modal")
+    console.log("abre modal")
   }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    console.log("aaasdasd")
+    console.log("depois do modal aberto")
   }
 
   function closeModal() {
@@ -44,7 +47,10 @@ const Header: React.FC = () => {
         </LinksRow>
 
         <LoginStartUpBox>
-          <LoginStartUpButton onClick={abreModal}>Procurar</LoginStartUpButton>
+          <LoginStartUpButton onClick={openModal}>Procurar</LoginStartUpButton>
+          <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal}>
+            <p>texto texto texto</p>
+          </Modal>
         </LoginStartUpBox>
       </NavBar>
     </Container>
