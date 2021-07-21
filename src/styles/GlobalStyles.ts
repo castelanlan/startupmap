@@ -1,41 +1,35 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+
+  :root {
+    --color-cian:   #34ebeb;
+    --color-violet: #4034eb;
+    /* --color-pink:#d034eb; */
+    --color-orange: #f27500;
+    --color-green:  #26ad00;
+    /* --color-red: #ad0000; */
+    --color-hlink:  #5a81c4;
+    --color-hlight: #839ecc;
+    --color-black:  #000000;
+    --color-bg:     #272633;
+
+
+    --panel-shadow: 10px 10px 3px 0 rgba(200,200,200,.3);
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   html {
     min-height: 100%;
-    background: var(--color-primary);
+    background-color: var(--color-bg);
   }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
   }
-  *, button, input {
-    border: 0;
-    background: none;
-    font-family: 'Montserrat', -apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-  }
-  :root {
-    --color-primary: #F5F5F5;
-    --color-black: #333;
-    --color-white: #FFF;
-    --color-gray: #666;
-    --color-blue: #3483fa;
-    --color-green: #00a650;
-
-    --color-header: #FFF159;
-    --color-search-placeholder: #AAAAAA;
-    --color-border: #ddd;
-
-    --reputation-1: #FFE7E6;
-    --reputation-2: #FFF4E7;
-    --reputation-3: #FFFDE5;
-    --reputation-4: #F3FEE0;
-    --reputation-5: #00A650;
-
-    --panel-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
-  }
+}
 `;
