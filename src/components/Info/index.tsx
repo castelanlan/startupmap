@@ -1,6 +1,8 @@
 import React from 'react';
 import { ReactNode } from 'react';
 
+import StartUps from '../StartUps';
+
 import {
   Container,
   Painel,
@@ -19,18 +21,19 @@ const Info: React.FC = () => {
   return (
     <Container>
       <Painel>
-        <Esquerda className="coluna">
+        <Esquerda className="coluna"> {/* :o */}
           <Conteudo>
             <Filtro>
               {/* ... */}
             </Filtro>
-            <h1>Texto na esquerda</h1>
+            <h2>Título na esquerda</h2>
           </Conteudo>
         </Esquerda>
         <Direita className="coluna">
           <Pesquisa />
           <Conteudo>
-            <h1>Texto na direita</h1>
+            <h2>Título na direita</h2>
+            <StartUps></StartUps>
           </Conteudo>
         </Direita>
       </Painel>

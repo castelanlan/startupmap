@@ -17,6 +17,7 @@ export const OkButton = styled.button`
 export const Container = styled.div``;
 
 export const NavBar = styled.div`
+    z-index: 1;
     width: 100%;
     position: fixed;
     border-bottom: solid 4px;

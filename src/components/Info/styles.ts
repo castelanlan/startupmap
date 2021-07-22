@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     height: 1000px; /* fix: arrumar footer imedia */
     display: grid;
-    padding: 100px 100px;
+    padding: 7% 5%;
     background-color: var(--color-orange);
 `;
 
@@ -34,9 +34,10 @@ export const Pesquisa = styled.div``;
 export const Conteudo = styled.div`
     padding: 7px;
     border-left: 4px solid var(--color-green);
-    box-shadow: 0 0 10px 1px var(--color-bg);
+    box-shadow: 0 0 3px 1px var(--color-bg);
+    clip-path: inset(-1px -1px -1px 0px); /* tirar sombra da esquerda */
 
-    > h1 {
+    > h2 {
         font-size: 25px;
     }
 `;
