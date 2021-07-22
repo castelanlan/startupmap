@@ -18,7 +18,7 @@ export const Container = styled.div``;
 
 export const NavBar = styled.div`
     width: 100%;
-    position: sticky;
+    position: fixed;
     border-bottom: solid 4px;
     border-color: var(--color-green);
     box-shadow: var(--panel-shadow);

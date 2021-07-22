@@ -4,7 +4,6 @@ export const Container = styled.div`
 `;
 
 export const DivColunas = styled.div`
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

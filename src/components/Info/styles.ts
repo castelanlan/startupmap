@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    width: 100%;
+    height: 2000px;
     display: grid;
+    padding: 100px 100px;
     background-color: var(--color-orange);
-    padding: 0 100px;
-    height: 400px;
-    width: 80%;
 `;
 
 export const Painel = styled.div`
     width: 70%;
-    background-color: var(--color-orange);
     display: grid;
-    grid-template-columns: 50fr 80fr;
+    column-count: 2;
+    grid-template-columns: 50fr 50fr;
+    background-color: var(--color-orange);
 `;
 
 export const Esquerda = styled.div`
@@ -21,9 +22,9 @@ export const Esquerda = styled.div`
 `;
 
 export const Filtro = styled.div`
-    background-color: var(--color-orange);
     margin: auto;
     text-align: right;
+    background-color: var(--color-orange);
 `;
 
 export const Direita = styled.div`
