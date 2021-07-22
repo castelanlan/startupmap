@@ -19,16 +19,18 @@ const Info: React.FC = () => {
   return (
     <Container>
       <Painel>
-        <Esquerda>
-          <Filtro>
-            {/* ... */}
-          </Filtro>
-          <p>texto na esquerda</p>
+        <Esquerda className="coluna">
+          <Conteudo>
+            <Filtro>
+              {/* ... */}
+            </Filtro>
+            <h1>Texto na esquerda</h1>
+          </Conteudo>
         </Esquerda>
-        <Direita>
+        <Direita className="coluna">
           <Pesquisa />
           <Conteudo>
-            <p>texto na direita</p>
+            <h1>Texto na direita</h1>
           </Conteudo>
         </Direita>
       </Painel>
