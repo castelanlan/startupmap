@@ -1,28 +1,35 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+    display: grid;
+    background-color: var(--color-orange);
+    padding: 0 100px;
+    height: 400px;
+    width: 80%;
 `;
 
 export const Painel = styled.div`
-    margin: auto;
-    background-color: white;
-    box-shadow: var(--panel-shadow);
+    width: 70%;
+    background-color: var(--color-orange);
     display: grid;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: 50fr 80fr;
 `;
 
-export const Esquerda = styled.div``;
+export const Esquerda = styled.div`
+    color: var(--color-orange);
+    box-shadow: 0 0 4px 4px rgb(255, 255, 255);
+`;
 
 export const Filtro = styled.div`
-    background-color: white;
+    background-color: var(--color-orange);
     margin: auto;
     text-align: right;
 `;
 
-export const Direita = styled.div``;
+export const Direita = styled.div`
+    color: var(--color-orange);
+    box-shadow: 0 0 4px 4px rgb(255, 255, 255);
+`;
 
 export const Pesquisa = styled.div``;
 

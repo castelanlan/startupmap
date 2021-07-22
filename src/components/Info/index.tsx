@@ -21,7 +21,6 @@ const Info: React.FC = () => {
       <Painel>
         <Esquerda>
           <Filtro>
-            <p>asdasd</p>
             {/* ... */}
           </Filtro>
           <p>texto na esquerda</p>

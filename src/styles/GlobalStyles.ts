@@ -13,9 +13,7 @@ export default createGlobalStyle`
     --color-hlight: #839ecc;
     --color-black:  #000000;
     --color-bg:     #14131a;
-
-
-    --panel-shadow: 10px 10px 3px 0 rgba(0,0,0,.3);
+    --panel-shadow: 5px 5px 3px 0 rgba(0,0,0,.3);
 
   * {
     margin: 0;
@@ -25,6 +23,7 @@ export default createGlobalStyle`
   }
 
   html {
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100%;
   }
 
