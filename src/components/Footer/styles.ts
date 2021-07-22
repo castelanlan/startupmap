@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 `;
 
-export const DivColunas = styled.div`
+export const DivColunas = styled.div` // fix: quebrei as colunas
     left: 0;
     bottom: 0;
     width: 100%;

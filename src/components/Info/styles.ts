@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 2000px;
+    height: 1000px;
     display: grid;
     padding: 100px 100px;
     background-color: var(--color-orange);
