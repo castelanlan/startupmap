@@ -13,13 +13,16 @@ export const OkButton = styled.button`
     background-color: var(--color-green);
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+`;
 
 export const NavBar = styled.div`
     padding: 0.5%;
     z-index: 1; // sem isso as divs dentro do painel do meio ficam em cima do header
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     border-bottom: solid 4px;
     border-color: var(--color-green);
     box-shadow: var(--panel-shadow);

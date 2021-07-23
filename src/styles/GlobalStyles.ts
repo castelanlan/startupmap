@@ -16,10 +16,10 @@ export default createGlobalStyle`
     --panel-shadow: 5px 5px 3px 0 rgba(0,0,0,.3);
 
   * {
-    margin: 0;
     box-sizing: border-box;
     background-color: var(--color-bg);
     color: white;
+    /* margin: 0; */
   }
 
   html {

@@ -27,13 +27,12 @@ const StartUp = () => {
   return (
     <StartUpSection>
       <Foto>
-        <img alt="Foto" src={bingus} />
+        <img alt="Foto" src={bingus} width="300px" height="300px" />
       </Foto>
       <Texto>
-        <Nome></Nome>
-        <Descricao></Descricao>
-        {/* ... */}
-        <BotaoContato />
+        <Nome><p>Nome da start up</p></Nome>
+        <Descricao><p>Descrição da startup</p></Descricao>
+        <BotaoContato>Contato</BotaoContato>
       </Texto>
     </StartUpSection>
 
