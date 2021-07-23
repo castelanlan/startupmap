@@ -16,15 +16,19 @@ export const Painel = styled.div`
     > .coluna {
         padding: 20px;
         background-color: #2e2b3b;
-        /* text-align: auto; */
     }
 `;
 
+const raioBorda = "4px";
+
 export const Esquerda = styled.div`
+    border-top-left-radius: ${raioBorda};
+    border-bottom-left-radius: ${raioBorda};
 `;
 
 export const Direita = styled.div`
     border-left: 20px solid var(--color-bg);
+    border-radius: ${raioBorda}; // fix: ñ usar margem pra fazer a divisão...
 `;
 
 export const Filtro = styled.div``;

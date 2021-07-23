@@ -1,6 +1,5 @@
 import React from "react";
 import Modal from 'react-modal';
-import { css } from "styled-components";
 
 import {
   Container,
@@ -55,13 +54,14 @@ const Header: React.FC = () => {
     <Container>
       <NavBar>
         <LinksRow> {/* remoção talvez necessária considerando que isso vai ser de página única*/}
-          <a className="active" href="/">primeiro </a> {/*fix: Mudar href para as paginas certas*/}
-          <a href="/">segundo </a>
-          <a href="/">terceiro </a>
+          <a href="/">possiveis </a> {/*fix: Mudar href para as paginas certas*/}
+          <a href="/">futuros </a>
+          <a href="/">links </a>
+          <a href="/">lorem ipsum</a>
         </LinksRow>
 
         <LoginStartUpBox>
-          <LoginStartUpButton onClick={openModal}>Cadastre sua start up aqui!</LoginStartUpButton>
+          <LoginStartUpButton onClick={openModal}>Cadastrar start up</LoginStartUpButton>
           {/* <ModalDiv> */}
           <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
             <form action="/post/cadastrar?"> {/* não sei as rotas*/}

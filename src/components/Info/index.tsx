@@ -26,13 +26,13 @@ const Info: React.FC = () => {
             <Filtro>
               {/* ... */}
             </Filtro>
-            <h2>Título na esquerda</h2>
+            <h2>Filtros</h2>
           </Conteudo>
         </Esquerda>
         <Direita className="coluna">
           <Pesquisa />
           <Conteudo>
-            <h2>Título na direita</h2>
+            <h2>Start Ups</h2>
             <StartUps></StartUps>
           </Conteudo>
         </Direita>
