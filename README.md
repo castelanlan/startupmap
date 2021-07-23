@@ -1,6 +1,6 @@
 # título
 
-Site que mapeia startups da região
+Site que busca mapear startups da região
 
 * Abstrato
     * Tela única
@@ -11,7 +11,14 @@ Site que mapeia startups da região
         * Email
         * Site
 
+Site atualmente live [aqui](https://f28d6fe0a431.ngrok.io) (_Há uma possibilidade do server cair_)
+
 ### Devs
 
-Dependencias: `yarn add` || `npm install`
-Start: `npm start` || `yarn run start`
+```js
+// Dependências:
+yarn install || npm install
+
+// Start:
+yarn run start || npm run
+```
