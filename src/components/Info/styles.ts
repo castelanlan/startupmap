@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
-    height: 1000px; /* fix: arrumar footer imedia */
+    min-height: 100%; /* fix: arrumar footer imedia */
     display: grid;
     padding: 7% 5%;
     background-color: var(--color-orange);
+    margin-bottom: 50px;
 `;
 
 export const Painel = styled.div`
-    width: 100%;
     display: grid;
     grid-template-columns: 30fr 70fr;
 
@@ -35,7 +35,7 @@ export const Filtro = styled.div``;
 
 export const Pesquisa = styled.div``;
 
-export const Conteudo = styled.div`
+export const Titulo = styled.div`
     padding: 7px;
     border-left: 4px solid var(--color-green);
     box-shadow: 0 0 3px 1px var(--color-bg);

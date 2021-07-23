@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-`;
-
-export const DivColunas = styled.div` // fix: quebrei as colunas
-    left: 0;
     bottom: 0;
     width: 100%;
+`;
+
+
+export const DivColunas = styled.div` // fix: quebrei as colunas
     text-align: center;
     display: block;
-    width: 100%;
     border-top: solid 4px;
     border-color: var(--color-green);
     column-count: 4;

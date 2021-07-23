@@ -10,7 +10,7 @@ import {
   Filtro,
   Direita,
   Pesquisa,
-  Conteudo
+  Titulo
 } from './styles';
 
 interface InfoProps {
@@ -22,19 +22,21 @@ const Info: React.FC = () => {
     <Container>
       <Painel>
         <Esquerda className="coluna"> {/* :o */}
-          <Conteudo>
+          <Titulo>
             <Filtro>
               {/* ... */}
             </Filtro>
             <h2>Filtros</h2>
-          </Conteudo>
+          </Titulo>
         </Esquerda>
         <Direita className="coluna">
           <Pesquisa />
-          <Conteudo>
+          <Titulo>
             <h2>Start Ups</h2>
-            <StartUps></StartUps>
-          </Conteudo>
+          </Titulo>
+          <StartUps></StartUps>
+          <StartUps></StartUps>
+          <StartUps></StartUps>
         </Direita>
       </Painel>
     </Container>
