@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactNode } from 'react';
 
-import StartUps from '../StartUps';
+import bingus from '../../assets/precious_bingus.png';
 
 import {
   Container,
@@ -10,11 +10,34 @@ import {
   Filtro,
   Direita,
   Pesquisa,
-  Titulo
+  Titulo,
+  StartUpSection,
+  Foto,
+  Texto,
+  Nome,
+  Descricao,
+  BotaoContato
 } from './styles';
 
 interface InfoProps {
   children: ReactNode;
+}
+
+const StartUp = () => {
+  return (
+    <StartUpSection>
+      <Foto>
+        <img alt="Foto" src={bingus} />
+      </Foto>
+      <Texto>
+        <Nome></Nome>
+        <Descricao></Descricao>
+        {/* ... */}
+        <BotaoContato />
+      </Texto>
+    </StartUpSection>
+
+  );
 }
 
 const Info: React.FC = () => {
@@ -34,9 +57,9 @@ const Info: React.FC = () => {
           <Titulo>
             <h2>Start Ups</h2>
           </Titulo>
-          <StartUps></StartUps>
-          <StartUps></StartUps>
-          <StartUps></StartUps>
+          <StartUp />
+          <StartUp />
+          <StartUp />
         </Direita>
       </Painel>
     </Container>

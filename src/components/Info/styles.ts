@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
+const raioBorda = "4px";
+
 export const Container = styled.div`
     width: 100%;
-    min-height: 100%; /* fix: arrumar footer imedia */
+    min-height: 1000px; /* fix: arrumar footer */
     display: grid;
     padding: 7% 5%;
     background-color: var(--color-orange);
@@ -19,8 +21,6 @@ export const Painel = styled.div`
     }
 `;
 
-const raioBorda = "4px";
-
 export const Esquerda = styled.div`
     border-top-left-radius: ${raioBorda};
     border-bottom-left-radius: ${raioBorda};
@@ -30,10 +30,6 @@ export const Direita = styled.div`
     border-left: 20px solid var(--color-bg);
     border-radius: ${raioBorda}; // fix: ñ usar margem pra fazer a divisão...
 `;
-
-export const Filtro = styled.div``;
-
-export const Pesquisa = styled.div``;
 
 export const Titulo = styled.div`
     padding: 7px;
@@ -45,3 +41,15 @@ export const Titulo = styled.div`
         font-size: 25px;
     }
 `;
+
+export const Filtro = styled.div``;
+
+export const Pesquisa = styled.div``;
+
+export const StartUpSection = styled.div``;
+
+export const Foto = styled.div``;
+export const Texto = styled.div``;
+export const Nome = styled.div``;
+export const Descricao = styled.div``;
+export const BotaoContato = styled.div``;
