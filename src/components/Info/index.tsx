@@ -33,9 +33,16 @@ const StartUp = () => {
       </Foto>
       <Texto>
 
-        <Nome><p>Nome da start up</p></Nome>
-        <Lugar><PinIcon /><p>Criciúma, SC</p></Lugar>
-        <Descricao><p>Descrição da startup</p></Descricao>
+        <Nome>
+          <p>Nome da start up</p>
+          <Lugar>
+            <PinIcon />
+            <p>Criciúma, SC</p>
+          </Lugar>
+        </Nome>
+        <Descricao><p> {/* 300 caracteres */}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula ut augue a, aliquam malesuada diam. Sed risus risus, scelerisque non sodales eget, molestie quis dolor. Ut finibus facilisis turpis et molestie. Donec vehicula venenatis justo, et rutrum magna convallis at mauris.
+        </p></Descricao>
         <BotaoContato>Contato</BotaoContato>
 
       </Texto>

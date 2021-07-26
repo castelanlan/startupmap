@@ -53,6 +53,7 @@ export const Pesquisa = styled.div``;
 
 // start up
 export const StartUpSection = styled.div`
+    position: relative;
     display: flex;
     padding: 10px;
     margin: 14px 0;
@@ -63,11 +64,7 @@ export const Foto = styled.div`
 
 export const Texto = styled.div`
     display: block;
-    margin: 28px !important; // D:
-    /* width: 100%; */
-    /* height: 100%; */
-    /* text-align: left; */
-
+    margin: 14px !important; // D:
 `;
 
 export const Nome = styled.div`
@@ -89,7 +86,7 @@ export const Lugar = styled.div`
 
 export const Descricao = styled.div`
     margin: 2px;
-    margin-top: 15%;
+    margin-top: 5%;
 
     > p {
         font-size: 20px;
@@ -98,7 +95,12 @@ export const Descricao = styled.div`
 `;
 
 export const BotaoContato = styled.button`
-    margin: 10px;
-    width: 30%;
+    position: absolute;
+    bottom: 0;
+    margin: 14px;
+    width: 10%;
     min-width: 60px;
+    background-color: var(--color-green) !important; /* :/ */
+    border: none;
+    color: white;
 `;

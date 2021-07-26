@@ -3,12 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
 
   :root {
-    --color-cian:   #34ebeb;
     --color-violet: #4034eb;
-    /* --color-pink:#d034eb; */
-    --color-orange: #f27500;
     --color-green:  #2bff2b;
-    /* --color-red: #ad0000; */
     --color-hlink:  #5a81c4;
     --color-hlight: #839ecc;
     --color-black:  #000000;
@@ -20,10 +16,10 @@ export default createGlobalStyle`
     background-color: var(--color-bg);
     color: white;
     /* margin: 0; */
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   html {
-    font-family: Arial, Helvetica, sans-serif;
     min-height: 100%;
   }
 
