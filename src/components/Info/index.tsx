@@ -37,7 +37,7 @@ const StartUp = () => {
           <p>Nome da start up</p>
           <Lugar>
             <PinIcon />
-            <p>Criciúma, SC</p>
+            <p>Criciúma - SC</p>
           </Lugar>
         </Nome>
         <Descricao><p> {/* 300 caracteres */}
@@ -69,7 +69,7 @@ const Info: React.FC = () => {
               {/* ... */}
             </Filtro>
 
-            <h2>Filtros</h2>
+            <h2 className="h_pesquisar">Pesquisar start ups</h2>
           </Titulo>
 
         </Esquerda>

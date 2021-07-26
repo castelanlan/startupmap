@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
+
 
 
 const raioBorda = "4px";
 
-export const PinIcon = styled(HiOutlineLocationMarker)``;
+
 
 export const Container = styled.div`
     width: 100%;
@@ -45,62 +45,12 @@ export const Titulo = styled.div`
         margin: 10px;
         font-size: 25px;
     }
+
+    > .h_pesquisar {
+        color: #ababab;
+    }
 `;
 
 export const Filtro = styled.div``;
 
 export const Pesquisa = styled.div``;
-
-// start up
-export const StartUpSection = styled.div`
-    position: relative;
-    display: flex;
-    padding: 10px;
-    margin: 14px 0;
-`;
-
-export const Foto = styled.div`
-`;
-
-export const Texto = styled.div`
-    display: block;
-    margin: 14px !important; // D:
-`;
-
-export const Nome = styled.div`
-    > p {
-        font-size: 30px;
-        margin: 0;
-    }
-`;
-
-export const Lugar = styled.div`
-    margin: 2px;
-    display: flex;
-    > p {
-        font-size: 15px;
-        color: #ababab;
-        margin: 0;
-    }
-`;
-
-export const Descricao = styled.div`
-    margin: 2px;
-    margin-top: 5%;
-
-    > p {
-        font-size: 20px;
-        margin: 0;
-    }
-`;
-
-export const BotaoContato = styled.button`
-    position: absolute;
-    bottom: 0;
-    margin: 14px;
-    width: 10%;
-    min-width: 60px;
-    background-color: var(--color-green) !important; /* :/ */
-    border: none;
-    color: white;
-`;

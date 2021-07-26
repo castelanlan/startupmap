@@ -15,7 +15,6 @@ export default createGlobalStyle`
     box-sizing: border-box;
     background-color: var(--color-bg);
     color: white;
-    /* margin: 0; */
     font-family: Arial, Helvetica, sans-serif;
   }
 
