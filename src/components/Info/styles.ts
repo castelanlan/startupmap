@@ -41,13 +41,22 @@ export const Titulo = styled.div`
     box-shadow: 0 0 3px 1px var(--color-bg);
     clip-path: inset(-1px -1px -1px 0px); /* tirar sombra da esquerda */
 
-    > h2 {
+    > h2, form {
         margin: 10px;
         font-size: 25px;
     }
 
-    > .h_pesquisar {
+    > .f_pesquisar {
+        display: flex;
         color: #ababab;
+        align-items: center;
+
+    > .input_pesq {
+        font-size: 25px;
+        width: 100%;
+        border: none;
+    }
+
     }
 `;
 

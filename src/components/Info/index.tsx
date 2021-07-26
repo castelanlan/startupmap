@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactNode } from 'react';
 
-import bingus from '../../assets/precious_bingus.png';
+import StartUp from '../StartUp';
 
 import {
   Container,
@@ -11,43 +11,10 @@ import {
   Direita,
   Pesquisa,
   Titulo,
-  StartUpSection,
-  Foto,
-  Texto,
-  Nome,
-  Descricao,
-  Lugar,
-  PinIcon,
-  BotaoContato
 } from './styles';
 
 interface InfoProps {
   children: ReactNode;
-}
-
-const StartUp = () => {
-  return (
-    <StartUpSection>
-      <Foto>
-        <img alt="Foto" src={bingus} width="300px" height="300px" />
-      </Foto>
-      <Texto>
-
-        <Nome>
-          <p>Nome da start up</p>
-          <Lugar>
-            <PinIcon />
-            <p>Criciúma - SC</p>
-          </Lugar>
-        </Nome>
-        <Descricao><p> {/* 300 caracteres */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula ut augue a, aliquam malesuada diam. Sed risus risus, scelerisque non sodales eget, molestie quis dolor. Ut finibus facilisis turpis et molestie. Donec vehicula venenatis justo, et rutrum magna convallis at mauris.
-        </p></Descricao>
-        <BotaoContato>Contato</BotaoContato>
-
-      </Texto>
-    </StartUpSection>
-  );
 }
 
 const { useState, Fragment } = React // https://stackoverflow.com/questions/51404335/append-a-react-component-in-another-on-button-click
@@ -69,7 +36,9 @@ const Info: React.FC = () => {
               {/* ... */}
             </Filtro>
 
-            <h2 className="h_pesquisar">Pesquisar start ups</h2>
+            <form className="f_pesquisar">
+              <input className="input_pesq" type="text" placeholder="Pesquise start ups"></input>
+            </form>
           </Titulo>
 
         </Esquerda>

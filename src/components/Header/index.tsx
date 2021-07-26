@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from 'react-modal';
 
+
 import {
   Container,
   NavBar,
@@ -14,24 +15,21 @@ import {
 Modal.setAppElement('#root')
 
 const estiloModal = {
+  overlay: {
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(255, 255, 255, 0.75)'
+  },
   content: {
+    display: 'block',
     top: '50%',
     left: '50%',
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    display: 'inline-block',
-  },
-  input: { // ?????????? galeris como que estiliza modal / filhos do modal 
-    width: '100%',
-    padding: '12px 20px',
-    margin: '8px 0',
-    display: 'block',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    boxSizing: 'border-box',
-    backgroundColor: '#000000'
   }
 };
 
@@ -62,7 +60,6 @@ const Header: React.FC = () => {
 
         <LoginStartUpBox>
           <LoginStartUpButton onClick={openModal}>Cadastrar start up</LoginStartUpButton>
-          {/* <ModalDiv> */}
           <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
             <form action="/post/cadastrar?"> {/* não sei as rotas*/}
 
@@ -81,7 +78,6 @@ const Header: React.FC = () => {
               <OkButton>Cadastrar start up<OkIcon /></OkButton>
             </form>
           </Modal>
-          {/* </ModalDiv> */}
         </LoginStartUpBox>
       </NavBar>
     </Container>
