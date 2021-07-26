@@ -11,7 +11,7 @@ Site que busca mapear startups da região
         * Email
         * Site
 
-Site atualmente live [aqui](https://f28d6fe0a431.ngrok.io) (_Há uma possibilidade do server cair_)
+Site atualmente live [aqui](https://90b8b843c1bb.ngrok.io) (_Há uma possibilidade do server cair_)
 
 ### Devs
 
@@ -19,6 +19,6 @@ Site atualmente live [aqui](https://f28d6fe0a431.ngrok.io) (_Há uma possibilida
 // Dependências:
 yarn install || npm install
 
-// Start:
+// Start
 yarn run start || npm run
 ```
