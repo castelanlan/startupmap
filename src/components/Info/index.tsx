@@ -29,21 +29,20 @@ const Info: React.FC = () => {
   return (
     <Container>
       <Painel>
-        <Esquerda className="coluna"> {/* :o */}
+        <Esquerda className="coluna">
 
           <Titulo>
-            <Filtro>
-              {/* ... */}
-            </Filtro>
-
             <form className="f_pesquisar">
               <input className="input_pesq" type="text" placeholder="Pesquise start ups"></input>
             </form>
+
+            <Filtro>
+              {/*  */}
+            </Filtro>
           </Titulo>
 
         </Esquerda>
         <Direita className="coluna">
-          <Pesquisa />
 
           <Titulo>
             <h2>Start Ups</h2>

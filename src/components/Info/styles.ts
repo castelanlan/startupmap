@@ -28,6 +28,8 @@ export const Painel = styled.div`
 export const Esquerda = styled.div`
     border-top-left-radius: ${raioBorda};
     border-bottom-left-radius: ${raioBorda};
+    /* padding: 20px; */
+    /* background-color: #2e2b3b; */
 `;
 
 export const Direita = styled.div`
@@ -55,6 +57,10 @@ export const Titulo = styled.div`
         font-size: 25px;
         width: 100%;
         border: none;
+    }
+
+    > .input_pesq:focus {
+        outline: none !important;
     }
 
     }
