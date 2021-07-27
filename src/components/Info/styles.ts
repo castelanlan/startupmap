@@ -49,20 +49,16 @@ export const Titulo = styled.div`
     }
 
     > .f_pesquisar {
-        display: flex;
-        color: #ababab;
-        align-items: center;
+        > .input_pesq {
+            font-size: 25px;
+            width: 100%;
+            border: none;
+        }
 
-    > .input_pesq {
-        font-size: 25px;
-        width: 100%;
-        border: none;
-    }
-
-    > .input_pesq:focus {
-        outline: none !important;
-    }
-
+        > .input_pesq:focus {
+            outline: none !important;
+            color: #ababab;
+        }
     }
 `;
 

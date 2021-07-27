@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
-export const Container = styled.div`
-
-`;
+export const Container = styled.div``;
 
 export const PinIcon = styled(HiOutlineLocationMarker)``;
 
@@ -16,6 +14,14 @@ export const StartUpSection = styled.div`
 `;
 
 export const Foto = styled.div`
+    > .foto {
+        max-width: 50vw;
+        max-height: 50vw;
+        resize: both;
+        height: auto;
+        width: auto;
+    }
+
 `;
 
 export const Texto = styled.div`

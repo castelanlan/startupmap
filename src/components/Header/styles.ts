@@ -13,8 +13,7 @@ export const OkButton = styled.button`
     background-color: var(--color-green);
 `;
 
-export const Container = styled.div`
-`;
+export const Container = styled.div``;
 
 export const NavBar = styled.div`
     padding: 0.5%;

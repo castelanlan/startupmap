@@ -24,7 +24,7 @@ const StartUp = () => {
     <Container>
       <StartUpSection>
         <Foto>
-          <img alt="Foto" src={bingus} width="300px" height="300px" />
+          <img className="foto" alt="Foto" src={bingus} />
         </Foto>
         <Texto>
 
