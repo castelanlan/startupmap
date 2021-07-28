@@ -2,15 +2,14 @@ import React from 'react';
 import { ReactNode } from 'react';
 
 import StartUp from '../StartUp';
+import Filter from '../Filter';
 
 import {
   Container,
   Painel,
-  Esquerda,
-  Filtro,
-  Direita,
-  Pesquisa,
   Titulo,
+  Esquerda,
+  Direita,
 } from './styles';
 
 interface InfoProps {
@@ -35,11 +34,9 @@ const Info: React.FC = () => {
             <form className="f_pesquisar">
               <input className="input_pesq" type="text" placeholder="Pesquise start ups"></input>
             </form>
-
-            <Filtro>
-              {/*  */}
-            </Filtro>
           </Titulo>
+
+          <Filter />
 
         </Esquerda>
         <Direita className="coluna">

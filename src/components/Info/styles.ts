@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-
-
 const raioBorda = "4px";
-
-
 
 export const Container = styled.div`
     width: 100%;
@@ -61,7 +57,3 @@ export const Titulo = styled.div`
         }
     }
 `;
-
-export const Filtro = styled.div``;
-
-export const Pesquisa = styled.div``;
