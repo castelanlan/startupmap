@@ -4,13 +4,16 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 export const Container = styled.div``;
 
-export const PinIcon = styled(HiOutlineLocationMarker)``;
+export const PinIcon = styled(HiOutlineLocationMarker)`
+    color: #ababab;
+`;
 
 export const StartUpSection = styled.div`
     position: relative;
     display: flex;
     padding: 10px;
     margin: 14px 0;
+    background-color: var(--color-bg);
 `;
 
 export const Foto = styled.div`
@@ -65,14 +68,14 @@ export const Descricao = styled.div`
     }
 `;
 
-export const BotaoContato = styled.button` // fix: !!!important
+export const BotaoContato = styled.button`
     position: absolute;
     bottom: 0;
     margin: 7px 7px 14px 7px;
     width: 10%;
     min-width: 60px;
-    background-color: var(--color-green) !important; /* :/ */
+    background-color: var(--color-green);
     border: none;
-    color: black !important;
+    color: black;
     font-weight: 600;
 `;

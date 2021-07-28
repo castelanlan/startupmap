@@ -5,17 +5,20 @@ import { BiCheck } from 'react-icons/bi'
 export const OkIcon = styled(BiCheck)``;
 
 // botões
-export const LoginStartUpButton = styled.button` // não sei pq não funfa 🗿
-    background-color: var(--color-hlink);
+export const LoginStartUpButton = styled.button`
+    color: white;
+    background-color: var(--color-bg);
+    
 `;
 
-export const OkButton = styled.button`
-    background-color: var(--color-green);
-`;
+export const OkButton = styled.button` // botão dentro do modal
+    background-color: var(--color-green); // fix: ...
+    `;
 
 export const Container = styled.div``;
 
 export const NavBar = styled.div`
+    background-color: var(--color-bg);
     padding: 0.5%;
     z-index: 1; // sem isso as divs dentro do painel do meio ficam em cima do header
     width: 100%;
@@ -30,7 +33,6 @@ export const NavBar = styled.div`
 
 export const LinksRow = styled.div` // fix: responsividade
     padding-top: 9px;
-    margin-top: 5px;
     display: inline-block;
     padding: 16px;
 

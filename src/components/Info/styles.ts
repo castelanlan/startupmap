@@ -7,8 +7,9 @@ export const Container = styled.div`
     min-height: 1000px; /* fix: arrumar footer */
     display: grid;
     padding: 7% 5%;
-    background-color: var(--color-orange);
+    margin: 0;
     margin-bottom: 50px;
+    background-color: var(--color-bg);
 `;
 
 export const Painel = styled.div`
@@ -24,8 +25,6 @@ export const Painel = styled.div`
 export const Esquerda = styled.div`
     border-top-left-radius: ${raioBorda};
     border-bottom-left-radius: ${raioBorda};
-    /* padding: 20px; */
-    /* background-color: #2e2b3b; */
 `;
 
 export const Direita = styled.div`
@@ -34,10 +33,12 @@ export const Direita = styled.div`
 `;
 
 export const Titulo = styled.div`
+    color: white;
     padding: 0.5px;
     border-left: 4px solid var(--color-green);
     box-shadow: 0 0 3px 1px var(--color-bg);
     clip-path: inset(-1px -1px -1px 0px); /* tirar sombra da esquerda */
+    background-color: var(--color-bg);
 
     > h2, form {
         margin: 10px;
@@ -46,6 +47,8 @@ export const Titulo = styled.div`
 
     > .f_pesquisar {
         > .input_pesq {
+            background-color: var(--color-bg);
+            color: white;
             font-size: 25px;
             width: 100%;
             border: none;

@@ -13,9 +13,9 @@ export default createGlobalStyle`
 
   * {
     box-sizing: border-box;
-    background-color: var(--color-bg);
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
   }
 
   html {

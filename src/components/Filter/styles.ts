@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
+    background-color: var(--color-bg);
 `;
 
 export const ItemList = styled.ul`
@@ -14,4 +14,5 @@ export const ListItem = styled.li`
     margin: 7px;
     padding: 7px;
     background-color: orange !important;
+    color: black;
 `;
