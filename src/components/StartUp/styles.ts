@@ -32,13 +32,19 @@ export const Texto = styled.div`
 export const Nome = styled.div`
     > p {
         font-size: 30px;
-        margin: 0;
+        margin: 7px;
+        background-color: orange;
+        color: black;
+        padding: 7px;
+        border-radius: 1.5px;
     }
 `;
 
 export const Lugar = styled.div`
-    margin: 2px;
+    margin: 7px;
     display: flex;
+    height: auto;
+
     > p {
         font-size: 15px;
         color: #ababab;
@@ -48,19 +54,21 @@ export const Lugar = styled.div`
 `;
 
 export const Descricao = styled.div`
-    margin: 2px;
-    margin-top: 5%;
+    margin: 0 7px 0 7px;
 
     > p {
+        background-color: orange;
+        color: black;
         font-size: 20px;
-        margin: 0;
+        padding: 7px;
+        border-radius: 1.5px;
     }
 `;
 
 export const BotaoContato = styled.button` // fix: !!!important
     position: absolute;
     bottom: 0;
-    margin: 14px;
+    margin: 7px 7px 14px 7px;
     width: 10%;
     min-width: 60px;
     background-color: var(--color-green) !important; /* :/ */
