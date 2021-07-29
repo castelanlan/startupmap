@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         </LinksRow>
 
         <LoginStartUpBox>
-          <LoginStartUpButton onClick={openModal}>Cadastrar start up</LoginStartUpButton>
+          <LoginStartUpButton className="bt_login" onClick={openModal}>Cadastrar start up</LoginStartUpButton>
           <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
             <form action="/post/cadastrar?"> {/* não sei as rotas*/}
 

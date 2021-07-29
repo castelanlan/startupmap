@@ -12,7 +12,7 @@ export const StartUpSection = styled.div`
     position: relative;
     display: flex;
     padding: 10px;
-    margin: 14px 0;
+    margin: 14px 0 !important;
     background-color: var(--color-bg);
 `;
 

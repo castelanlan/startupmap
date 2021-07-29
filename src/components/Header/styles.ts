@@ -8,14 +8,22 @@ export const OkIcon = styled(BiCheck)``;
 export const LoginStartUpButton = styled.button`
     color: white;
     background-color: var(--color-bg);
-    
+    outline: none;
+    border: none;
+    background-color: var(--color-green);
+    color: black;
+    font-weight: 600;
 `;
 
 export const OkButton = styled.button` // botão dentro do modal
-    background-color: var(--color-green); // fix: ...
+    background-color: var(--color-green);
     `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    > .bt_login:focus {
+        background-color: black;
+    }
+`;
 
 export const NavBar = styled.div`
     background-color: var(--color-bg);
