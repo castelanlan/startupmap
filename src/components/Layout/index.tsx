@@ -5,7 +5,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Info from '../Info';
 
-import { Container, Wrapper } from './styles';
+// import { Container, Wrapper } from './styles';
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,13 +13,11 @@ interface LayoutProps {
 
 const Layout: React.FC = () => {
   return (
-    <Container>
+    <>
       <Header />
-      <Wrapper>
-        <Info />
-      </Wrapper>
+      <Info />
       <Footer />
-    </Container>
+    </>
   );
 };
 

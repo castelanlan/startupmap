@@ -45,10 +45,10 @@ const Info: React.FC = () => {
             <h2>Start Ups</h2>
           </Titulo>
 
-          <Fragment>
+          {/* <Fragment>
             <button onClick={() => setCount(count + 1)}>Adicionar start up</button>
             {[...Array(count)].map((_, i) => <AddedElement key={i} />)}
-          </Fragment>
+          </Fragment> */}
 
           <StartUp />
         </Direita>

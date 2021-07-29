@@ -28,7 +28,7 @@ export const Texto = styled.div`
     display: flex;
     flex-direction: column;
     margin: 14px !important; // D:
-    flex: 1 0 30%;
+    flex: 1 0;
 `;
 
 export const Nome = styled.div`

@@ -1,11 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { BiCheck } from 'react-icons/bi'
 
 // ícones
 export const OkIcon = styled(BiCheck)``;
 
 // botões
-export const LoginStartUpButton = styled.button`
+
+const buttonCSS = css`
     color: white;
     background-color: var(--color-bg);
     outline: none;
@@ -13,11 +14,11 @@ export const LoginStartUpButton = styled.button`
     background-color: var(--color-green);
     color: black;
     font-weight: 600;
-`;
+`
 
-export const OkButton = styled.button` // botão dentro do modal
-    background-color: var(--color-green);
-    `;
+export const LoginStartUpButton = styled.button`${buttonCSS}`;
+
+export const OkButton = styled.button`${buttonCSS}`;
 
 export const Container = styled.div`
     > .bt_login:focus {
@@ -36,6 +37,12 @@ export const NavBar = styled.div`
     border-color: var(--color-green);
     box-shadow: var(--panel-shadow);
     text-align: right;
+
+    > #div_login {
+        > #bt_login:hover {
+            background-color: green;
+        }
+    }
 `;
 
 export const LinksRow = styled.div` // fix: responsividade

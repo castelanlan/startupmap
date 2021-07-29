@@ -23,6 +23,8 @@ const estiloModal = {
     backgroundColor: 'rgba(255, 255, 255, 0.75)'
   },
   content: {
+    backgroundColor: 'var(--color-ababab)',
+    border: 'solid 1px',
     display: 'block',
     top: '50%',
     left: '50%',
@@ -58,24 +60,24 @@ const Header: React.FC = () => {
           <a href="/">lorem ipsum</a>
         </LinksRow>
 
-        <LoginStartUpBox>
-          <LoginStartUpButton className="bt_login" onClick={openModal}>Cadastrar start up</LoginStartUpButton>
-          <Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
-            <form action="/post/cadastrar?"> {/* não sei as rotas*/}
+        <LoginStartUpBox id="div_login">
+          <LoginStartUpButton id="bt_login" onClick={openModal}>Cadastrar start up</LoginStartUpButton>
+          <Modal id="modal" isOpen={modalIsOpen} onAfterOpen={afterOpenModal} onRequestClose={closeModal} style={estiloModal}>
+            <form id="form" action="/cadastrar"> {/* não sei as rotas*/}
 
-              <label htmlFor="nstartup">Nome da sua start up</label>
-              <input type="text" id="in_nstartup" name="nomeStartUp" placeholder="Necessário" />
+              <label htmlFor="nome">Nome da sua start up: </label>
+              <input type="text" id="in_nstartup" name="nome" placeholder="Necessário" /> <br />
 
-              <label htmlFor="nfunds">Nome dos fundadores</label>
-              <input type="text" id="in_nfunds" name="nFunds" placeholder="Necessário" />
+              <label htmlFor="fundadores">Nome dos fundadores: </label>
+              <input type="text" id="in_nfunds" name="fundadores" placeholder="Necessário" /> <br />
 
-              <label htmlFor="email">Email</label>
-              <input type="text" id="in_email" name="email" placeholder="Do dono ou da startup" />
+              <label htmlFor="email">Email: </label>
+              <input type="text" id="in_email" name="email" placeholder="Do dono ou da startup" /> <br />
 
-              <label htmlFor="site">Site</label>
-              <input type="text" id="in_site" name="site" placeholder="Opcional" />
+              <label htmlFor="site">Site: </label>
+              <input type="text" id="in_site" name="site" placeholder="Opcional" /> <br />
 
-              <OkButton>Cadastrar start up<OkIcon /></OkButton>
+              <OkButton>Cadastrar<OkIcon /></OkButton>
             </form>
           </Modal>
         </LoginStartUpBox>

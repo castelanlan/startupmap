@@ -35,7 +35,8 @@ const StartUp = () => {
               <p>Criciúma - SC</p>
             </Lugar>
           </Nome>
-          <Descricao contentEditable="true"><p> {/* 300 caracteres */}
+          <Descricao><p contentEditable="true"> {/* 300 caracteres */}
+            Essa caixa pode ser editada. <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula ut augue a, aliquam malesuada diam. Sed risus risus, scelerisque non sodales eget, molestie quis dolor. Ut finibus facilisis turpis et molestie. Donec vehicula venenatis justo, et rutrum magna convallis at mauris.
           </p></Descricao>
           <BotaoContato>Entrar em contato</BotaoContato>
