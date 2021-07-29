@@ -15,7 +15,7 @@ export default createGlobalStyle`
   * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0; /* por algum motivo isso faz todas as outras margens precisarem de \`!important\`.. */
   }
 
   html {

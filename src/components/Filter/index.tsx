@@ -5,7 +5,8 @@ import { ReactNode } from 'react';
 import {
   Container,
   ItemList,
-  ListItem
+  ListItem,
+  Title
 } from './styles';
 
 interface FilterProps {
@@ -16,10 +17,19 @@ const Filter: React.FC = () => {
   return (
     <Container>
       <ItemList> {/* ul */}
-        <ListItem>abcde</ListItem>
-        <ListItem>abcdef</ListItem>
-        <ListItem>abcdefg</ListItem>
-        <ListItem>abcdefgh</ListItem>
+        <Title>Local</Title>
+        <ListItem>Criciúma</ListItem>
+        <ListItem>Forquilhinha</ListItem>
+        <ListItem>Içara</ListItem>
+        <ListItem>etc...</ListItem>
+      </ItemList>
+      <ItemList>
+        <Title>Área</Title>
+        <ListItem>Metalurgia</ListItem>
+        <ListItem>Administração</ListItem>
+        <ListItem>Tecnologia</ListItem>
+        <ListItem>Advocacia</ListItem>
+        <ListItem>etc</ListItem>
       </ItemList>
     </Container>
   );
