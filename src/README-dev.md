@@ -6,7 +6,7 @@
 
 ### Começar projeto
 
-`yarn run start` ou `npm run`
+`yarn run start` ou `npm run`, vai começar na porta 3000.
 
 ### Build
 
