@@ -21,16 +21,14 @@ export const Foto = styled.div`
         max-width: 20vw;
         max-height: 20vw;
         resize: both;
-        /* height: auto;
-        width: auto; */
     }
-
 `;
 
 export const Texto = styled.div`
     display: flex;
     flex-direction: column;
     margin: 14px !important; // D:
+    flex: 1 0 30%;
 `;
 
 export const Nome = styled.div`

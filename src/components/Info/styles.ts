@@ -6,14 +6,14 @@ export const Container = styled.div`
     width: 100%;
     min-height: 1000px; /* fix: arrumar footer */
     display: grid;
-    padding: 7% 5%;
+    padding: 7% 3%;
     margin: 5% 0 5% 0;
     background-color: var(--color-bg);
 `;
 
 export const Painel = styled.div`
     display: grid;
-    grid-template-columns: 30fr 70fr;
+    grid-template-columns: 25fr 75fr;
 
     > .coluna {
         padding: 20px;
