@@ -7,8 +7,7 @@ export const Container = styled.div`
     min-height: 1000px; /* fix: arrumar footer */
     display: grid;
     padding: 7% 5%;
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 5% 0 5% 0;
     background-color: var(--color-bg);
 `;
 
@@ -33,6 +32,7 @@ export const Direita = styled.div`
 `;
 
 export const Titulo = styled.div`
+    margin-bottom: 14px;
     color: white;
     padding: 0.5px;
     border-left: 4px solid var(--color-green);
@@ -55,8 +55,8 @@ export const Titulo = styled.div`
         }
 
         > .input_pesq:focus {
-            outline: none !important;
-            color: #ababab;
+            outline: none;
+            color: var(--color-ababab);
         }
     }
 `;

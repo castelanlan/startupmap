@@ -19,7 +19,6 @@ export const Container = styled.div``;
 
 export const NavBar = styled.div`
     background-color: var(--color-bg);
-    padding: 0.5%;
     z-index: 1; // sem isso as divs dentro do painel do meio ficam em cima do header
     width: 100%;
     position: fixed;
@@ -32,8 +31,8 @@ export const NavBar = styled.div`
 `;
 
 export const LinksRow = styled.div` // fix: responsividade
-    padding-top: 9px;
     display: inline-block;
+    padding-top: 9px;
     padding: 16px;
 
     > a {

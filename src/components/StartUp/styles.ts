@@ -5,7 +5,7 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 export const Container = styled.div``;
 
 export const PinIcon = styled(HiOutlineLocationMarker)`
-    color: #ababab;
+    color: var(--color-ababab);
 `;
 
 export const StartUpSection = styled.div`
@@ -44,20 +44,20 @@ export const Nome = styled.div`
 `;
 
 export const Lugar = styled.div`
-    margin: 7px;
+    margin: 7px !important;
     display: flex;
     height: auto;
 
     > p {
         font-size: 15px;
-        color: #ababab;
+        color: var(--color-ababab);
         margin: 0;
         margin-left: 5px;
     }
 `;
 
 export const Descricao = styled.div`
-    margin: 0 7px 0 7px;
+    margin: 0 7px 0 7px !important;
 
     > p {
         background-color: orange;
