@@ -38,7 +38,7 @@ const StartUp = () => {
           <Descricao><p> {/* 300 caracteres */}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula ut augue a, aliquam malesuada diam. Sed risus risus, scelerisque non sodales eget, molestie quis dolor. Ut finibus facilisis turpis et molestie. Donec vehicula venenatis justo, et rutrum magna convallis at mauris.
           </p></Descricao>
-          <BotaoContato>Contato</BotaoContato>
+          <BotaoContato>Entrar em contato</BotaoContato>
 
         </Texto>
       </StartUpSection>

@@ -18,17 +18,18 @@ export const StartUpSection = styled.div`
 
 export const Foto = styled.div`
     > .foto {
-        max-width: 50vw;
-        max-height: 50vw;
+        max-width: 20vw;
+        max-height: 20vw;
         resize: both;
-        height: auto;
-        width: auto;
+        /* height: auto;
+        width: auto; */
     }
 
 `;
 
 export const Texto = styled.div`
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 14px !important; // D:
 `;
 
@@ -71,11 +72,12 @@ export const Descricao = styled.div`
 export const BotaoContato = styled.button`
     position: absolute;
     bottom: 0;
-    margin: 7px 7px 14px 7px;
-    width: 10%;
+    margin: 7px 7px 14px 7px !important;
     min-width: 60px;
+    min-height: 2vw;
     background-color: var(--color-green);
     border: none;
     color: black;
     font-weight: 600;
+    border-radius: 1.5px;
 `;

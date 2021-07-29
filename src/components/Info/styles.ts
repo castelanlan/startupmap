@@ -22,6 +22,8 @@ export const Painel = styled.div`
 `;
 
 export const Esquerda = styled.div`
+    display: flex;
+    flex-direction: column;
     border-top-left-radius: ${raioBorda};
     border-bottom-left-radius: ${raioBorda};
 `;

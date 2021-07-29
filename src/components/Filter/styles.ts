@@ -14,6 +14,7 @@ export const Title = styled.div`
     justify-content: center;
     color: black;
     margin: 7px !important;
+    margin-bottom: 14px !important;
     padding: 7px;
     background-color: var(--color-green);
 `;
