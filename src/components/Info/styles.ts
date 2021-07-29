@@ -4,11 +4,19 @@ const raioBorda = "4px";
 
 export const Container = styled.div`
     width: 100%;
-    min-height: 1000px; /* fix: arrumar footer */
+    min-height: 50vw; /* fix: */
     display: grid;
-    padding: 7% 3%;
+    padding: 5% 3%;
     margin: 5% 0 5% 0;
     background-color: var(--color-bg);
+
+    @media (max-width: 750px) {
+        padding: 10% 3%;
+    }
+
+    @media (max-width: 450px) {
+        padding: 20% 3%;
+    }
 `;
 
 export const Painel = styled.div`

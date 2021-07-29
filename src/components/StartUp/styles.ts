@@ -65,6 +65,14 @@ export const Descricao = styled.div`
         padding: 7px;
         border-radius: 1.5px;
     }
+
+    @media (max-width: 640px) {
+        > p {
+            position: relative;
+            left: -86%;
+            width: 180%;
+        }
+    }
 `;
 
 export const BotaoContato = styled.button`

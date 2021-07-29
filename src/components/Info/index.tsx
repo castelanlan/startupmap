@@ -16,14 +16,14 @@ interface InfoProps {
   children: ReactNode;
 }
 
-const { useState, Fragment } = React // https://stackoverflow.com/questions/51404335/append-a-react-component-in-another-on-button-click
-const AddedElement = () => {
-  return (<StartUp />);
-}
+// const { useState, Fragment } = React // https://stackoverflow.com/questions/51404335/append-a-react-component-in-another-on-button-click
+// const AddedElement = () => {
+//   return (<StartUp />);
+// }
 
 const Info: React.FC = () => {
 
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <Container>
